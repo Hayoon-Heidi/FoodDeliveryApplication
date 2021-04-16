@@ -1,0 +1,20 @@
+
+DROP TABLE IF EXISTS restaurants;
+CREATE TABLE restaurants(
+ id INTEGER PRIMARY KEY AUTO_INCREMENT,
+ email VARCHAR(50),
+ password VARCHAR(16),
+ restName VARCHAR(30),
+ open TIME(6),
+ close TIME(6),
+ description VARCHAR(60),
+ address VARCHAR(60),
+ phoneNumber VARCHAR(11),
+ catId INT
+);
+
+INSERT INTO restaurants(email, password, restName, open, close, description, address, phoneNumber, catId) 
+VALUES ('example@example.com', 'example123', 'Example Store', '8:00', '22:00', 'This is an example', '123 example St., EX', '0000000000', '1'),
+('rest@aur.ant', 'rest', 'Sample Deli', '11:00:00', '23:00:00', 'Sample Restaurant', '700 Royal Ave', '1234567890', '2');
+
+UPDATE restaurants SET restImg=? WHERE id = ?;

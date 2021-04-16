@@ -1,0 +1,12 @@
+create table category (
+	catId INT,
+	catName VARCHAR(13)
+);
+insert into category (catId, catName) values (1, 'Chicken');
+insert into category (catId, catName) values (2, 'Pizza');
+insert into category (catId, catName) values (3, 'Sub / Salad');
+insert into category (catId, catName) values (4, 'Fast Food');
+insert into category (catId, catName) values (5, 'Cafe / Bakery');
+insert into category (catId, catName) values (6, 'Korean');
+insert into category (catId, catName) values (7, 'Asian');
+insert into category (catId, catName) values (8, 'Vegetarian');

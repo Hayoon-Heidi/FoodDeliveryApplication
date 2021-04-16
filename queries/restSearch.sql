@@ -1,0 +1,1 @@
+SELECT * FROM restaurants WHERE category = 6 AND restName LIKE '%G%';

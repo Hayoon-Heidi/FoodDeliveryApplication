@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS restmenu;
+
+CREATE TABLE restMenu (
+    menuId INT AUTO_INCREMENT,
+    restId INT NOT NULL,
+    menuName VARCHAR(50),
+    menuDesc VARCHAR(50),
+    menuPrice DOUBLE(5),
+    PRIMARY KEY (menuId),
+    FOREIGN KEY (restId) REFERENCES restaurants(id)
+);
+
+INSERT INTO restMenu(restId, menuName, menuDesc, menuPrice) VALUES ('2', 'example', 'This is an example', '7.25'),
+(2, 'Americano', 'Classic coffee', 2.99),
+(2, 'Taro Milk Tea', 'Taro flavored milk tea', 4.0),
+(2, 'Orange Juice', 'Freshly squeezed orange', 3.8),
+(2, 'Chocolate Milk Tea	', 'Deep chocolate goood', 4.0),
+(1, 'Fried Chicken', 'Yummy Fried Chicken', 25.5),
+(1, 'Hawaian Pizza', 'Why put pineapples on pizza?!', 28.98),
+(1, 'Pepperoni Pizza', 'Classic Pepperoni', 27.55),
+(1, 'Coka Cola', 'Classic Coke', 2.99);

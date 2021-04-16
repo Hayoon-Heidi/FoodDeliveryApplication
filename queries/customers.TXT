@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS customers;
+CREATE TABLE customers(
+ id INTEGER PRIMARY KEY AUTO_INCREMENT,
+ email VARCHAR(50),
+ password VARCHAR(16),
+ firstName VARCHAR(30),
+ lastName VARCHAR(30),
+ address VARCHAR(60),
+ phoneNumber VARCHAR(13)
+);
+
+
+INSERT INTO customers(email, password, firstName, lastName, address, phoneNumber) 
+VALUES ('shiny7@student.douglascollege.ca', 'qwerty1234', 'Yerin', 'Shin', '700 Royal Ave, New Westminster, BC', '604-527-5400'),
+('new@email.com', 'new', 'New', 'Customer', '700 Royal Ave, New Westminster, BC', '778-123-4567');
+
